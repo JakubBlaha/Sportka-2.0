@@ -23,7 +23,7 @@ function vylosujCisla(inputId) {
     }
 
     // Sort
-    // chosen.sort((a, b) => {return a - b})
+    chosen.sort((a, b) => {return a - b})
 
     // Get the one additional number
     const addition = popRandomItemFromArray(pool)
