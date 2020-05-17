@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <title>Sportka v2.0</title>
+  <link rel="stylesheet" type="text/css" href="sportka.css">
+  <script src="sportka.js"></script>
+</head>
+<body>
+  <section id="aplikace">
+  <form name="sportka">
+    <fieldset class="kulaterohy stin">
+      <legend class="kulaterohy stin"> Sportka v2.0 </legend>
+      <label for="isportka">Vylosovaná čísla </label><br>
+      <input class="kulaterohy" type="text" id="isportka" name="" readonly><br><br>
+      <input class="kulaterohy stin" type="button" value="Losuj!" onclick="vylosujCisla('isportka')">
+      <div id="podpis">Autor: Jakub Bláha</div>
+    </fieldset>
+  </form>
+  </section>
+  
+  <h3>Zadání</h3>
+  
+  <h4>JavaScript</h4>
+  <ol>
+    <li>Vytvoř aplikaci pro tažení 6 čísel sportky plus 1 dodatkového čísla podle předlohy.</li>
+    <li>Čísla se losují po kliknutí na tlačítko Losuj!</li>
+    <li>Čísla se vypisují  do textového pole.</li>
+    <li>Tažená čísla z intervalu &lt;1, 49&gt; se nesmí opakovat.</li>
+    <li>Tažená čísla jsou při výpisu oddělena čárkou a mezerou.</li>
+    <li>Prvních 6 tažených čísel je při výpisu seřazeno podle velikosti.</li>
+    <li>Mezi posledním číslem a dodatkovým číslem není mezera, ale svislítko (|).</li>
+    <li>Jméno autora v pravém dolním rohu okna aplikace změň na své jméno.</li>
+  </ol>
+  <h4>CSS</h4>
+  <ol>
+    <li>Pomocí CSS vytvoř podobu aplikace podle předlohy. V detailech a barvách se může lišit, ale dodrž následující parametry.</li>
+    <li>Písmo aplikace je 2 krát větší, než obyčejný text.</li>
+    <li>Podpis má velikost písma čtvrtinovou oproti zbytku aplikace a je v rohu aplikace.</li>
+    <li>Blok aplikace i text v ní je vycentrovaný vůči stránce.</li>
+    <li>Aplikace musí fungovat i bez CSS (jen bude mít jednodušší podobu).</li>
+  </ol>
+  
+  <h3>Nápověda</h3>
+  <p>Funkce, které se mohou hodit: Math.random(), Math.floor(), pole.indexOf(), pole.push(), pole.pop(), pole.sort(), pole.join().</p>
+</body>
+</html>
